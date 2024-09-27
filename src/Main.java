@@ -6,17 +6,16 @@ public class Main {
         int replenishment = 1200;
         // пополнение
 
-        // бонус в 100 р
+
         int initialAccount = 100;
         // начальный счет
 
 
-        {
-            if (replenishment > 1000) {
+        if (replenishment > 1000) {
 
-                System.out.printf("Начислено бонусов: " + (replenishment / 100) + ", остаток на счете: " + (initialAccount + replenishment / 100 + replenishment));
-            } else
-                System.out.println("Остаток на счете: " + (initialAccount + replenishment));
+            System.out.printf("Начислено бонусов: " + (replenishment / 100) + ", остаток на счете: " + (initialAccount + replenishment / 100 + replenishment));
+        } else {
+            System.out.println("Остаток на счете: " + (initialAccount + replenishment));
         }
         // Объявляете переменные для входных данных и
         // параметров программы: начального счёта,
